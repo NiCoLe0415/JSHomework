@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Travel Blog</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav">
+                <ul class="navContainer">
+                    <li class="navItem">
+                        <a href="" class="navLink">Travel updates</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="" class="navLink">Reviews</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="" class="navLink">About</a>
+                    </li>
+                    <li class="navItem">
+                        <a href="" class="navLink">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="addContainer">
+                <input class="button" type="button" value="+Add article" />
+            </div>
+            <main>
+                <article>
+                    <h2 class="title">
+                        The complete guide to explore Cinque Terre
+                    </h2>
+
+                    <div class="actionsContainer">
+                        <button type="button" class="actionsBtn">Edit</button>
+                        <button type="button" class="actionsBtn">Delete</button>
+                    </div>
+                    <div id="container"></div>
+                </article>
+            </main>
+            <footer class="footer">
+                <a href="#" class="footerLink">previous</a>
+                <a href="#" class="footerLink">next</a>
+            </footer>
+        </div>
+        <div class="add-article-card">
+            <h2 class="title">Add new post</h2>
+            <div class="inputs__container">
+                <input
+                    type="text"
+                    id="new_title"
+                    class="input"
+                    placeholder="Please enter title"
+                />
+                <input
+                    type="text"
+                    id="new_tag"
+                    class="input"
+                    placeholder="Please enter tag"
+                />
+                <input
+                    type="text"
+                    id="new_author"
+                    class="input"
+                    placeholder="Please enter author"
+                />
+                <input
+                    type="text"
+                    id="new_date"
+                    class="input"
+                    placeholder="Please enter date"
+                />
+                <input
+                    type="text"
+                    id="new_image_url"
+                    class="input"
+                    placeholder="Please enter image url"
+                />
+            </div>
+            <textarea
+                name="content"
+                id="new_comment"
+                cols="28"
+                rows="7"
+                placeholder="Please enter content"
+            ></textarea>
+            <div class="add-article-card__buttons">
+                <input
+                    id="button"
+                    class="button button--pink"
+                    type="button"
+                    value="Cancel"
+                />
+                <input
+                    id="saveButton"
+                    class="button button--green"
+                    type="button"
+                    value="Save"
+                />
+            </div>
+        </div>
+        <div id="container"></div>
+
+        <script src="./loremjs/lorem.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
